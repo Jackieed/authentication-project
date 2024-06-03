@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Meeting Schedule</title>
+</head>
+
+<body>
+    <h1>Client Meeting Schedule</h1>
+    <form action="schedule_meeting.php" method="POST">
+        <label for="client_id">Client:</label><br>
+        <select id="client_id" name="client_id" required>
+            <option value="1">Jackie Do</option>
+            <option value="2">Add New Client</option>
+            <!-- Add more options dynamically if needed -->
+        </select><br>
+        <label for="meeting_date">Meeting Date:</label><br>
+        <input type="datetime-local" id="meeting_date" name="meeting_date" required><br>
+        <label for="notes">Notes:</label><br>
+        <textarea id="notes" name="notes"></textarea><br>
+        <input type="submit" value="Schedule Meeting">
+    </form>
+</body>
+
+</html>
